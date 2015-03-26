@@ -1,46 +1,6 @@
 \documentclass[12pt,a4paper,bibliography=totocnumbered,listof=totocnumbered]{scrartcl}
-\usepackage[ngerman]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage{tabularx}
-\usepackage{geometry}
-\usepackage{setspace}
-\usepackage[right]{eurosym}
-\usepackage[printonlyused]{acronym}
-\usepackage{subfig}
-\usepackage{floatflt}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{colortbl}
-\usepackage{paralist}
-\usepackage{array}
-\usepackage{titlesec}
-\usepackage{parskip}
-\usepackage[right]{eurosym}
-\usepackage[subfigure,titles]{tocloft}
-\usepackage[pdfpagelabels=true]{hyperref}
 
-\usepackage{listings}
-\lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
-\makeatletter
-\def\l@lstlisting#1#2{\@dottedtocline{1}{0em}{1em}{\hspace{1,5em} Lst. #1}{#2}}
-\makeatother
-
-\geometry{a4paper, top=27mm, left=30mm, right=20mm, bottom=35mm, headsep=10mm, footskip=12mm}
-
-\hypersetup{unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},
-	pdftitle={Abschlussarbeit},
-	pdfauthor={Daniel Brettschneider},
-	pdfsubject={Abschlussarbeit},
-	pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
-	pdfproducer={pdfTeX \the\pdftexversion.\pdftexrevision},
-	pdfkeywords={Abschlussarbeit},
-	pdfnewwindow=true,
-	colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
-\pdfinfo{/CreationDate (D:20110620133321)}
+\input{pakete.tex}
 
 \begin{document}
 
@@ -70,7 +30,7 @@
 \thispagestyle{empty}
 \begin{center}
 	\hspace{-1cm} % this moves the picture to the middle
-	\includegraphics[width=\textwidth]{Bilder/hs_os.png}\\	
+	\includegraphics[width=\textwidth]{Bilder/hs_os.png}\\
 	\vspace*{2cm}
 	\Large
 	\textbf{Fakultät}\\
@@ -84,15 +44,15 @@
 	\vspace*{1cm}
 	\textbf{Beispiel für eine Abschlussarbeit}\\
 	\vspace*{2cm}
-	
+
 	\vfill
 	\normalsize
 	\newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
 	\begin{tabular}{x{6cm}p{7.5cm}}
-		\rule{0mm}{5ex}\textbf{Autor:} & Daniel Brettschneider\newline email@email.de \\ 
-		\rule{0mm}{5ex}\textbf{Prüfer:} & Prof. Dr. Piep \\ 
-		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 01.01.2013 \\ 
-	\end{tabular} 
+		\rule{0mm}{5ex}\textbf{Autor:} & Daniel Brettschneider\newline email@email.de \\
+		\rule{0mm}{5ex}\textbf{Prüfer:} & Prof. Dr. Piep \\
+		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 01.01.2013 \\
+	\end{tabular}
 \end{center}
 \pagebreak
 
