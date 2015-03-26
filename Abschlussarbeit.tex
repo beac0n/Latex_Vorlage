@@ -45,113 +45,26 @@
 % ----------------------------------------------------------------------------------------------------------
 % Einleitung
 % ----------------------------------------------------------------------------------------------------------
-\section{Einleitung}
-Dieses Kapitel enthält Beispiele zum Einfügen von Abbildungen, Tabellen, etc.
 
-\subsection{Bilder}
-Zum Einfügen eines Bildes, siehe Abbildung \ref{fig:osgi}, wird die \textit{minipage}-Umgebung genutzt, da die Bilder so gut positioniert werden können.
-
-\vspace{1em}
-\begin{minipage}{\linewidth}
-	\centering
-	\includegraphics[width=0.7\linewidth]{Bilder/hs_os.png}
-	\captionof{figure}[OSGi Architektur]{OSGi Architektur\footnotemark }
-	\label{fig:osgi}
-\end{minipage}
-\footnotetext{Quelle: \url{http://www.osgi.org/Technology/WhatIsOSGi}}
-
-\subsection{Tabellen}
-In diesem Abschnitt wird eine Tabelle (siehe Tabelle \ref{tab:beispiel}) dargestellt.
-
-\vspace{1em}
-\begin{table}[!h]
-	\centering
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\textbf{Name} & \textbf{Name} & \textbf{Name}\\
-		\hline
-		1 & 2 & 3\\
-		\hline
-		4 & 5 & 6\\
-		\hline
-		7 & 8 & 9\\
-		\hline
-	\end{tabular}
-	\caption{Beispieltabelle}
-	\label{tab:beispiel}
-\end{table}
-
-\pagebreak
-\subsection{Auflistung}
-Für Auflistungen wird die \textit{compactitem}-Umgebung genutzt, wodurch der Zeilenabstand zwischen den Punkten verringert wird.
-
-\begin{compactitem}
-	\item Nur
-	\item ein
-	\item Beispiel.
-\end{compactitem}
-
-\subsection{Listings}
-Zuletzt ein Beispiel für ein Listing, in dem Quellcode eingebunden werden kann, siehe Listing \ref{lst:arduino}.
-
-\vspace{1em}
-\begin{lstlisting}[caption=Arduino Beispielprogramm, label=lst:arduino]
-int ledPin = 13;
-void setup() {
-    pinMode(ledPin, OUTPUT);
-}
-void loop() {
-    digitalWrite(ledPin, HIGH);
-    delay(500);
-    digitalWrite(ledPin, LOW);
-    delay(500);
-}
-\end{lstlisting}
-
-\subsection{Tipps}
-Die Quellen befinden sich in der Datei \textit{bibo.bib}. Ein Buch- und eine Online-Quelle sind beispielhaft eingefügt. [Vgl. \cite{buch}, \cite{online}]
-
-Abkürzungen lassen sich natürlich auch nutzen (\ac{OSGi}). Weiter oben im Latex-Code findet sich das Verzeichnis.
-\pagebreak
+\input{01-Einleitung.tex}
 
 % ----------------------------------------------------------------------------------------------------------
-% Kapitel
+% Kapitel 2 - Lorem ipsum
 % ----------------------------------------------------------------------------------------------------------
-\section{Lorem ipsum}
-Lorem ipsum dolor sit amet.
 
-\subsection{subipsum}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\subsection{sublorem}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
+\input{02-Lorem_ipsum.tex}
 
 % ----------------------------------------------------------------------------------------------------------
-% Kapitel
+% Kapitel 3 - ipsum lorem
 % ----------------------------------------------------------------------------------------------------------
-\section{ipsum lorem}
-Lorem ipsum dolor sit amet.
 
-\subsection{ipsumsub}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\subsection{loremsub}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
+\input{03-ipsum_lorem.tex}
 
 % ----------------------------------------------------------------------------------------------------------
-% Kapitel
+% Kapitel 4 - Kapitel
 % ----------------------------------------------------------------------------------------------------------
-\section{Kapitel}
-Lorem ipsum dolor sit amet.
 
-\subsection{Unterkapitel}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-\subsection{Unterkapitel}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-\pagebreak
+\input{04-Kapitel.tex}
 
 % ----------------------------------------------------------------------------------------------------------
 % Literatur
