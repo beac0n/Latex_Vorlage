@@ -4,25 +4,7 @@
 
 \begin{document}
 
-\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
-
-% Kopf- und Fusszeile
-\renewcommand{\sectionmark}[1]{\markright{#1}}
-\renewcommand{\leftmark}{\rightmark}
-\pagestyle{fancy}
-\lhead{}
-\chead{}
-\rhead{\thesection\space\contentsname}
-\lfoot{Beispiel für eine Abschlussarbeit\newline auch mit langem Titel}
-\cfoot{}
-\rfoot{\ \linebreak Seite \thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-
-% Vorspann
-\renewcommand{\thesection}{\Roman{section}}
-\renewcommand{\theHsection}{\Roman{section}}
-\pagenumbering{Roman}
+\input{formatierung.tex}
 
 % ----------------------------------------------------------------------------------------------------------
 % Titelseite
