@@ -14,6 +14,7 @@ von Daniel Brettschneider und wurde für die Hochschule Karlsruhe angepasst.
 
 ### Benötigte tools
 
+	git
 	python
 	pdflatex
 	bibtex
