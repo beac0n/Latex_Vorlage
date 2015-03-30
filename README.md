@@ -1,7 +1,7 @@
 # Latex_Vorlage
 
 Einleitung
-===
+====
 
 Dies ist eine einfache Latex Vorlage für Abschlussarbeiten.
 Sie basiert auf der
@@ -9,7 +9,25 @@ Sie basiert auf der
 von Daniel Brettschneider und wurde für die Hochschule Karlsruhe angepasst.
 
 Installation
-===
+====
+
+Windows
+=====
+
+
+
+Linux
+=====
+
+Es werden die tools
+
+	pdflatex
+
+und
+
+	bibtex
+
+benötigt
 
     git clone https://github.com/beac0n/Latex_Vorlage.git
     ./buildScript.py Abschlussarbeit
