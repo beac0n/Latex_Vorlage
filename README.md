@@ -14,12 +14,10 @@ von Daniel Brettschneider und wurde für die Hochschule Karlsruhe angepasst.
 
 ### Linux
 
-Es werden die tools
+#### Benötigte tools
 
+	python
 	pdflatex
-
-und
-
 	bibtex
 
 benötigt
