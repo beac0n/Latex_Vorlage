@@ -20,8 +20,6 @@ von Daniel Brettschneider und wurde für die Hochschule Karlsruhe angepasst.
 	pdflatex
 	bibtex
 
-benötigt
-
     git clone https://github.com/beac0n/Latex_Vorlage.git
     ./buildScript.py Abschlussarbeit
 
