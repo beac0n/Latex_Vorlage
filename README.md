@@ -25,3 +25,9 @@ von Daniel Brettschneider und wurde für die Hochschule Karlsruhe angepasst.
     ./buildScript.py Abschlussarbeit.tex out
 
 Abschlussarbeit.pdf im Verzeichniss out/ öffnen
+
+### Verwendung
+
+Das Dokument ist eigentlich selbsterklärend.
+
+In der Datei variables.tex finden sich Variablen die man umdefinieren sollte.

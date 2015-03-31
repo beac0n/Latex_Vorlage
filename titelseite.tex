@@ -1,32 +1,32 @@
 \thispagestyle{empty}
 \begin{center}
 	\hspace{-1cm} % this moves the picture to the middle
-	\includegraphics[width=\textwidth]{Bilder/hs_os.png}\\
-	\vspace*{2cm}
+	\includegraphics[width=\textwidth]{\GlobalsCollegePicturePath}\\
+	\vspace*{1cm}
+
 	\Large
 	\textbf{Fakultät}\\
-	\textbf{Informatik und Wirtschaftsinformatik}\\
+	\textbf{\GlobalsFacultyName}\\
 	\vspace*{2cm}
-	\Huge
-	\textbf{Abschlussarbeit}\\
-	\vspace*{0.5cm}
-	\large
-	über das Thema\\
-	\vspace*{1cm}
-	\textbf{Beispiel für eine Abschlussarbeit}\\
 
-	% for additional english title, replace the following line with
-	% \textbf{Example for thesis}
-	\vspace*{2cm}
+	\LARGE
+	\textbf{\GlobalsThesisTitle}\\
+	\vspace*{0.5cm}
+
+	\large
+	%über das Thema\\
+	\vspace*{1cm}
+	\textbf{\GlobalsWhatKindOfWork}\\
+	\vspace*{1cm}
 
 	\vfill
 	\normalsize
 	\newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
-	\begin{tabular}{x{6cm}p{7.5cm}}
-		\rule{0mm}{5ex}\textbf{Autor:} & Daniel Brettschneider\newline email@email.de \\
-		\rule{0mm}{5ex}\textbf{Prüfer:} & Prof. Dr. Piep \\
-		\rule{0mm}{5ex}\textbf{Abgabedatum:} & 01.01.2013 \\
+	\begin{tabular}{x{4cm}p{7.5cm}}
+		\rule{0mm}{5ex}\textbf{Autor:} & \GlobalsAuthorName\newline \GlobalsAuthorMail \\
+		\rule{0mm}{5ex}\textbf{Referent:} & \GlobalsReferentName \\
+		\rule{0mm}{5ex}\textbf{Korreferent:} & \GlobalsCoreferentName \\ % no Correferent? just comment this out
+		\rule{0mm}{5ex}\textbf{Abgabetermin:} & \GlobalsDeadlineDate \\
 	\end{tabular}
 \end{center}
 \pagebreak
-

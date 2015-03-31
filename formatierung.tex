@@ -1,5 +1,8 @@
 \titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
 
+% never ever allow words to breach out of the border
+\sloppy
+
 % Kopf- und Fusszeile
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\leftmark}{\rightmark}
@@ -7,7 +10,7 @@
 \lhead{}
 \chead{}
 \rhead{\thesection\space\contentsname}
-\lfoot{Beispiel für eine Abschlussarbeit\newline auch mit langem Titel}
+\lfoot{\GlobalsThesisTitle}
 \cfoot{}
 \rfoot{\ \linebreak Seite \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
