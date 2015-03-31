@@ -16,7 +16,8 @@ if not os.path.exists(fileNameNoTex + texEnding):
 	sys.exit(fileNameNoTex + texEnding + ' does not exist')
 
 # create out direcotry if necessary
-if os.path.exists(outDir) and not os.path.isdir(outDir):
+if os.path.exists(outDir):
+	if not os.path.isdir(outDir):
 		sys.exit(outDir + ' is a file, not a folder. Remove the file ' + outDir + ' or use a different output directory name')
 else:
 	os.makedirs(outDir)
