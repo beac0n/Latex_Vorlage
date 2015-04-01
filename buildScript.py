@@ -25,10 +25,8 @@ else:
 if not os.path.isdir(outDir): # should never happen
 	sys.exit('FATAL: ' + outDir + ' was not be created')
 
-# build 3 times
-# after 1. time: bib is not in pdf
-# after 2. time: bib bookmark is not present
-# after 3. time: everything is present
-for x in range(0, 3):
-	check_call(['pdflatex', '-output-directory', outDir, fileNameNoTex + texEnding])
-	check_call(['bibtex', outDir + '/' + fileNameNoTex + '.aux'])
+# as descriped in http://stackoverflow.com/questions/2461905/compiling-latex-bib-source
+check_call(['pdflatex', '-output-directory', outDir, fileNameNoTex + texEnding])
+check_call(['bibtex', outDir + '/' + fileNameNoTex + '.aux'])
+check_call(['pdflatex', '-output-directory', outDir, fileNameNoTex + texEnding])
+check_call(['pdflatex', '-output-directory', outDir, fileNameNoTex + texEnding])
