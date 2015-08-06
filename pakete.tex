@@ -23,21 +23,42 @@
 \usepackage[pdfpagelabels=true]{hyperref}
 
 \usepackage{listings}
-\lstset{basicstyle=\footnotesize, captionpos=b, breaklines=true, showstringspaces=false, tabsize=2, frame=lines, numbers=left, numberstyle=\tiny, xleftmargin=2em, framexleftmargin=2em}
+\lstset{
+	basicstyle=\footnotesize,
+	captionpos=b,
+	breaklines=true,
+	showstringspaces=false,
+	tabsize=2,
+	frame=lines,
+	numbers=left,
+	numberstyle=\tiny,
+	xleftmargin=2em,
+	framexleftmargin=2em}
+
 \makeatletter
 \def\l@lstlisting#1#2{\@dottedtocline{1}{0em}{1em}{\hspace{1,5em} Lst. #1}{#2}}
 \makeatother
 
-\geometry{a4paper, top=27mm, left=30mm, right=20mm, bottom=35mm, headsep=10mm, footskip=12mm}
+\input{variables.tex}
 
-\hypersetup{unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},
-   pdftitle={Abschlussarbeit},
-   pdfauthor={Daniel Brettschneider},
-   pdfsubject={Abschlussarbeit},
-   pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
-   pdfproducer={pdfTeX \the\pdftexversion.\pdftexrevision},
-   pdfkeywords={Abschlussarbeit},
-   pdfnewwindow=true,
-   colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
+\geometry{
+	a4paper,
+	top=\GlobalsGeometryTop,
+	left=\GlobalsGeometryLeft,
+	right=\GlobalsGeometryRight,
+	bottom=\GlobalsGeometryBottom,
+	headsep=\GlobalsGeometryHeadsep,
+	footskip=\GlobalsGeometryFootskip}
+
+\hypersetup{
+	unicode=false, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},
+    pdftitle={\GlobalsSortOfName},
+    pdfauthor={\GlobalsAuthorName},
+    pdfsubject={Master-Thesis},
+    pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
+    pdfproducer={pdfTeX \the\pdftexversion.\pdftexrevision},
+    pdfkeywords={\GlobalsSortOfName},
+    pdfnewwindow=true,
+    colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=black}
 \pdfinfo{/CreationDate (D:20110620133321)}
 
