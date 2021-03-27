@@ -26,6 +26,4 @@ Abschlussarbeit.pdf im Verzeichniss out/ öffnen
 
 ### Verwendung
 
-Das Dokument ist eigentlich selbsterklärend.
-
 In der Datei variables.tex finden sich Variablen die man umdefinieren sollte.
